@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aqua;
+            color: black;
+            font: 20px Arial;
+                    }
+
+    </style>
+</head>
+<body>
+    <h1>Prazer senhor</h1>
+    <script>
+        var nome= prompt('Qual o seu nome')
+        var idade= prompt('Qual a sua idade')
+        var n1= Number(prompt('Digite um numero'))
+        var n2= Number(prompt('Digite outro numero'))
+        var s= n1 + n2
+        document.write(`Olá <strong>${nome.toUpperCase()}</strong></br>
+         a sua idade é <strong>${idade}</strong><br>
+        o seu nome tem <strong>${nome.length} letras</strong> </br>
+        o resultado da soma de <strong>${n1}</strong> + <strong>${n2}</strong> = <strong>${s.toFixed(3)}</strong><br>
+        o numero com 2 casas decimais é ${n1.toFixed(2)}`)
+
+    </script>
+</body>
+</html>
