@@ -1,0 +1,7 @@
+prompt("seu nome")
+alert('quer mesmo entrar?')
+confirm("tem centeza ?")
+confirm('rapazzz tem certeza mesmo?')
+confirm('não entreee olhe vou perguntar mais uma vez vai entrar mesmo ?')
+alert('então beleza')
+alert('entrar')
