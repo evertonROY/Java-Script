@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <h1>Primeiro estudo com DOM</h1>
+    <h1 class="opa">Primeiro estudo com DOM</h1>
     <p>........Aqui vai o resultado........</p>
     <p>......Aprendendo a usar o <strong>DOM</strong> em JavaScript........</p>
     <div id="msg">.......Clique em mim......</div>
@@ -28,12 +28,13 @@
         var corpo = window.document.body
         var p1 = document.getElementsByTagName('p')[1]
         var d = window.document.getElementById('msg')
+        var op = window.document.querySelector('h1.opa')
         window.document.write(p1.innerText)
         window.document.write(p1.innerHTML)
         p1.style.color = ('blue')
         corpo.style.background = 'black'
         d.style.background = 'green'
-        
+        op.style.background = 'red'
         
     </script>
 </body>
