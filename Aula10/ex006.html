@@ -20,16 +20,27 @@
 </head>
 
 <body>
-    <div id="area" onclick="clique()">
+    <div id="area" onclick="clicou()" onmouseenter="entrou()" onmouseout="saiu()">
         Interaja...
     </div>
 
     <script>
-        function clique(){
         var a = document.getElementById('area')
-        a.innerText = 'olá amigo'
-        document.body.style.background = 'black'
-    }
+        function clicou() {
+            a.innerText = 'clicou'
+            document.body.style.background = 'red'
+            
+        }
+
+        function entrou() {
+            a.innerText = 'entrou'
+            document.body.style.background = 'white'
+        }
+
+        function saiu() {
+            a.innerText = 'saiu'
+            document.body.style.background = 'black'
+        }
     </script>
 </body>
 
