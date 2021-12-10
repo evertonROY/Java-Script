@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,16 +18,19 @@
         }
     </style>
 </head>
+
 <body>
-    <div id="area" onclick="clicar()">
+    <div id="area" onclick="clique()">
         Interaja...
     </div>
 
     <script>
-         function clicar() {
-             var a = window.document.getElementById('area')
-             a.innerText = 'Clicou!'
-         }
+        function clique(){
+        var a = document.getElementById('area')
+        a.innerText = 'olá amigo'
+        document.body.style.background = 'black'
+    }
     </script>
 </body>
+
 </html>
