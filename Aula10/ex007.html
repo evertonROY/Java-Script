@@ -8,16 +8,16 @@
     <title>Somando Números</title>
 
     <style>
-        body{
+        body {
             display: flex;
-            justify-content:center;
-            align-items:center;
+            justify-content: center;
+            align-items: center;
             width: 100vw;
             height: 100vh;
             font: normal 30px Arial;
         }
 
-        main{ 
+        main {
             background-color: rgb(90, 187, 182);
             padding: 30px;
             text-align: center;
@@ -25,8 +25,8 @@
             box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.397);
             border-radius: 15px;
         }
-        
-        #res{
+
+        #res {
             margin-top: 20px;
             text-align: center;
             font: normal 30px Arial;
@@ -36,7 +36,7 @@
             border-radius: 5px;
         }
 
-        input{
+        input {
             width: 100px;
             height: 50px;
             font: normal 30px Arial;
@@ -51,14 +51,15 @@
         <h1>Somando Valores</h1>
         <input type="number" name="txtn1" id="txtn1"> +
         <input type="number" name="txtn2" id="txtn2">
-        <input type="button" value="somar" onclick="somar()">
+        <input type="button" value="somar" id="sm">
         <div id="res">Resultado</div>
     </main>
 
     <script>
-var tn1 = document.getElementById('txtn1')
-var tn2 = document.querySelector('input#txtn2')
-var res = document.getElementById('res')
+        sm.addEventListener('click', somar)
+        var tn1 = document.getElementById('txtn1')
+        var tn2 = document.querySelector('input#txtn2')
+        var res = document.getElementById('res')
 
         function somar() {
             var n1 = Number(tn1.value)
