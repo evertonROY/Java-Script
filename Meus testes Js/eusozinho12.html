@@ -40,12 +40,14 @@
         </section>
 
 
-        <div id="sc">
-            <input type="number" name="inp1" id="inp1">
-            <input type="number" name="inp2" id="inp2">
-            <input type="button" value="Somar" id="sm">
-            <div id="res">Resultado</div>
-        </div>
+        <section id="s2">
+            <div id="sc">
+                <input type="number" name="inp1" id="inp1">
+                <input type="number" name="inp2" id="inp2">
+                <input type="button" value="somar" id="sm">
+                <div id="res">Resultado</div>
+            </div>
+        </section>
 
 
     </main>
@@ -68,8 +70,8 @@
         }
 
         function somar() {
-            var n1 = Number(inp1.Value)
-            var n2 = Number(inp2.Value)
+            var n1 = Number(inp1.value)
+            var n2 = Number(inp2.value)
             var s = n1 + n2
             res.innerHTML = s
             
