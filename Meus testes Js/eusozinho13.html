@@ -12,18 +12,20 @@
 
         #caixa1{
             background-color: red;
-            width: 200px;
-            height: 200px;
+            width: 250px;
+            height: 250px;
             margin-bottom: 20px;
             padding: 30px;
+            text-align: center;
+            line-height:200px;
         }
 
         #caixa2{
             display: grid;
             text-align: center;
             background-color: rosybrown;
-            width: 200px;
-            height: 200px;
+            width: 250px;
+            height: 250px;
             padding: 30px;
 
         }
@@ -42,8 +44,11 @@
     </section>
 
     <script>
+        var c1 = document.getElementById('caixa1')
+        c1.addEventListener('click', clicou)
+
         function clicou(){
-       
+       c1.innerHTML = 'Clicou'
         }
 
     </script>
