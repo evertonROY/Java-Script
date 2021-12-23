@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
+        body {
             background-color: rgb(124, 141, 182);
         }
 
-        #caixa1{
+        #caixa1 {
             background-color: red;
             width: 250px;
             height: 250px;
             margin-bottom: 20px;
             padding: 30px;
             text-align: center;
-            line-height:200px;
+            line-height: 200px;
         }
 
-        #caixa2{
+        #caixa2 {
             display: grid;
             text-align: center;
             background-color: rosybrown;
@@ -31,6 +32,7 @@
         }
     </style>
 </head>
+
 <body>
     <section id="caixa1">
         <p>clique aqui!</p>
@@ -39,18 +41,35 @@
     <section id="caixa2">
         <input type="number" name="valor1" id="inp1">
         <input type="number" name="valor2" id="inp2">
-        <input type="button" value="Calcular">
-        <p>Respostaa</p>
+        <input type="button" value="calcular" id="calc">
+        <p id="resp">Respostaa</p>
     </section>
 
     <script>
         var c1 = document.getElementById('caixa1')
         c1.addEventListener('click', clicou)
 
-        function clicou(){
-       c1.innerHTML = 'Clicou'
+        var c2 = document.querySelector('#caixa2')
+        var res = document.querySelector('#resp')
+        var calc = document.querySelector('#calc')
+        var inp1 = document.querySelector('#inp1')
+        var inp2 = document.querySelector('#inp2')
+        calc.addEventListener('click', soma)
+
+
+        function clicou() {
+            c1.innerHTML = 'Clicou'
+            c1.style.background = 'black'
+            c1.style.color = 'white'
         }
 
+        function soma() {
+            var n1 = Number(inp1.value)
+            var n2 = Number(inp2.value)
+            var s = n1 + n2
+            res.innerHTML = s
+        }
     </script>
 </body>
+
 </html>
