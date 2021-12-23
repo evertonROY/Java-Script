@@ -12,13 +12,14 @@
         }
 
         #caixa1 {
-            background-color: red;
+            background-color: brown;
             width: 250px;
             height: 250px;
             margin-bottom: 20px;
             padding: 30px;
-            text-align: center;
-            line-height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         #caixa2 {
@@ -49,6 +50,8 @@
         var c1 = document.getElementById('caixa1')
         c1.addEventListener('click', clicou)
         c1.addEventListener('dblclick', dbclicou)
+        c1.addEventListener('mouseenter', entrou)
+        c1.addEventListener('mouseout', saiu)
 
         var c2 = document.querySelector('#caixa2')
         var res = document.querySelector('#resp')
@@ -57,7 +60,13 @@
         var inp2 = document.querySelector('#inp2')
         calc.addEventListener('click', soma)
 
+function entrou(){
+    c1.style.background = 'pink'
+}
 
+function saiu(){
+    c1.style.background = 'red'
+}
         function clicou() {
             c1.innerHTML = 'Clicou'
             c1.style.background = 'black'
