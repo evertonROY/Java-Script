@@ -13,13 +13,13 @@
 
     Velocidade do carro: <input type="number" name="txtvel" id="txtvel">Km/h
 
-    <input type="button" value="Verificar">
+    <input type="button" value="Verificar" id="Verificar">
 
     <div id="res">RESPOSTA</div>
 
     <script>
         var ress = document.getElementById('res')
-        res.addEventListener('click', somar)
+        Verificar.addEventListener('click', somar)
 
         function somar() {
             ress.innerHTML = 'Olá mundo'
