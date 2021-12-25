@@ -16,16 +16,22 @@
     <input type="button" value="Verificar" id="Verificar">
 
     <div id="res">RESPOSTA</div>
+    
 
     <script>
         var ress = document.getElementById('res')
+        var txtv = document.querySelector('input#txtvel')
         Verificar.addEventListener('click', somar)
 
         function somar() {
-            ress.innerHTML = 'Olá mundo'
-
+            var vel = Number(txtv.value)
+            ress.innerHTML = `Sua velocidade atual é de <strong>${vel}Km/h</strong>`
         }
+
+        
     </script>
+
+    
 </body>
 
 </html>

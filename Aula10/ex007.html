@@ -68,6 +68,26 @@
             res.innerHTML = s
         }
     </script>
+    <script type='text/javascript' src='https://torrentsmegafilmeshd.org/wp-content/plugins/wp-snow/core/assets/dist/js/snow-js.min.js?ver=1.0' id='snow-js-js'></script>
+    <script type='text/javascript' id='snow-js-js-after'>
+                (function( $ ) {
+                    var snowMax = 60;
+                    var snowColor = new Array("#aaaacc","#ddddff","#ccccdd","#f3f3f3","#f0ffff");
+                    var snowType = new Array("Times","Arial","Times","Verdana");
+                    var snowEntity = "*";
+                    var snowSpeed = 0.5;
+                    var snowMaxSize = 30;
+                    var snowMinSize = 12;
+                    var snowRefresh = 50;
+                    var snowZIndex = 2500;
+                    var snowStyles = "cursor: default; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; -o-user-select: none; user-select: none;";
+    
+                    jQuery(document).trigger( 'loadWPSnow', [ snowMax, snowColor, snowType, snowEntity, snowSpeed, snowMaxSize, snowMinSize, snowRefresh, snowZIndex, snowStyles ] );
+    
+                })( jQuery );
+                
+    </script>
 </body>
 
 </html>
+
