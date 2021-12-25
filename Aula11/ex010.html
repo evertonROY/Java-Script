@@ -24,15 +24,20 @@
         Verificar.addEventListener('click', somar)
 
         function somar() {
+
             var vel = Number(txtv.value)
-            ress.innerHTML = `Sua velocidade atual é de <strong>${vel}Km/h</strong>`
+            ress.innerHTML = `<p>Sua velocidade atual é de <strong>${vel}Km/h</strong></p> 
+            <p>Dirija com cuidado e use cinto de segurança!</p>`
+
             if(vel > 70) {
-                'Voce está a cima da velocidade permitida, MULTADO!'
-            }
+                ress.innerHTML = `<p>Sua velocidade atual é de <strong>${vel}Km/h</strong></p> <p>Voce está a cima da velocidade permitida, <strong>MULTADO!</strong></p> <p>Dirija com cuidado e use cinto de segurança!</p>`
+                 
+            } 
+
     
         }
         
-        '<p>Dirija com cuidado e use cinto de segurança!</p>' 
+        
         
     </script>
 
