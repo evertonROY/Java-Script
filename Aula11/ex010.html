@@ -26,8 +26,13 @@
         function somar() {
             var vel = Number(txtv.value)
             ress.innerHTML = `Sua velocidade atual é de <strong>${vel}Km/h</strong>`
+            if(vel > 70) {
+                'Voce está a cima da velocidade permitida, MULTADO!'
+            }
+    
         }
-
+        
+        '<p>Dirija com cuidado e use cinto de segurança!</p>' 
         
     </script>
 
