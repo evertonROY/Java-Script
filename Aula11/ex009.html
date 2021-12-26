@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Teste de Nacionalidade</h1>
+    <p>Digite aqui onde voçê nasceu.</p>
+    <input type="text" name="" id="nacion" placeholder="Ex:China">
+    <input type="button" value="Verificar" id="ver">
+    <p id="resp">Resultado</p>
+
+    <script>
+        var nacio = document.querySelector('#nacion')
+        ver.addEventListener('click', clicou)
+        var res = document.querySelector('#resp')
+
+        function clicou() {
+            var naci = (nacio.value)
+             var nac = `${naci.toUpperCase()}`
+            res.innerHTML = `Você nasceu em <strong>${naci.toUpperCase()}</strong>!`
+
+            if (nac == 'BRASIL') {
+                res.innerHTML += `<p>A sua nacionalidade é <strong>Brasileira</strong>!</p>`
+            }
+            else {
+                res.innerHTML += `<p>A sua nacionalidade é <strong>Estrangeira</strong>!</p>`
+            }
+        }
+    </script>
+</body>
+
+</html>
