@@ -1,1 +1,1 @@
-document.alert('olá mundo')
+alert('olá mundo')
