@@ -10,7 +10,7 @@ console.log(diaSem)
 4 = Quinta
 5 = Sexta
 6 = Sábado
-*/ 
+*/
 
 switch (diaSem) {
     case 0:
@@ -34,5 +34,7 @@ switch (diaSem) {
     case 6:
         console.log('Sábado')
         break
-    
+    default:
+        console.log('Essa semana não existe!')
+
 }
