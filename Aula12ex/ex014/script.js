@@ -7,10 +7,13 @@ function carregar() {
     var sec = data.getSeconds()
     msg.innerHTML = `Agora são ${hora}:${min}:${sec}`
     if (hora >= 0 && hora <12){
-        opa.innerHTML = ('bom dia')
+        img.src = 'fotomanha.png'
+        document.body.style.background = '#FFE4B5'
     }else if(hora < 18){
-        opa.innerHTML = ('bom dtarde')
+        img.src = 'fototarde.png'
+        document.body.style.background = '#FF8C00'
     }else{
-        opa.innerHTML = ('bom noite')
+        img.src = 'fotonoite.png'
+        document.body.style.background = '#2F4F7F'
     }
 }
