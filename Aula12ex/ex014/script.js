@@ -24,14 +24,4 @@ function carregar() {
 
 
 
-
-
-
-    
-
-
-
-
-
-
 } 
