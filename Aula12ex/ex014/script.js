@@ -17,6 +17,4 @@ function carregar() {
         document.body.style.background = '#2F4F7F'
     }
 
-
-    
 } 
