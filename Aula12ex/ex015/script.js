@@ -13,8 +13,26 @@ function verificar() {
         img.setAttribute('id', 'foto')
         if (fsex[0].checked) {
             genero = 'Homem'
+            if (idade <= 10){
+                //Criança
+            }else if (idade <= 22){
+                //Jovem
+            }else if (idade <= 59){
+                //Adulto
+            }else{
+                //Idoso
+            }
         } else {
             genero = 'Mulher'
+            if (idade <= 10){
+                //Criança
+            }else if (idade <= 22){
+                //Jovem
+            }else if (idade <= 59){
+                //Adulto
+            }else{
+                //Idoso
+            }
         }
         res.style.textAlign = 'center'
         res.innerHTML = `Detectamos ${genero} com ${idade} anos!`
