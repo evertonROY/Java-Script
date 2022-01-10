@@ -40,7 +40,3 @@ function verificar() {
     }
 
 }
-dfgdfdfgdfgdfgdgdgfdfgdfgdfgdfgdgggddgdg
-
-df
- 
