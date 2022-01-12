@@ -1,0 +1,33 @@
+function carregar() {
+    var msg = document.getElementById('msg')
+    var img = document.getElementById('imagem')
+
+    const { hour, minute, hour12  } = formatDate(new Date().toISOString())
+
+    msg.innerHTML = `Agora são ${hour}:${minute} ${hour12}`
+
+    // arrow function
+    setInterval(() => {
+        const { hour, minute, hour12  } = formatDate(new Date().toISOString())
+
+        msg.innerHTML = `Agora são ${hour}:${minute} ${hour12}`
+        if (hour >= 0 && hour <12){
+            img.src = 'fotomanha.png'
+            document.body.style.background = '#FFE4B5'
+        }else if(hour < 18){
+            img.src = 'fototarde.png'
+            document.body.style.background = '#FF8C00'
+        }else{
+            img.src = 'fotonoite.png'
+            document.body.style.background = '#2F4F7F'
+        }
+        msg.innerHTML = `Agora são ${hour}:${minute} ${hour12}`
+    }, 100);//reload a cada 1 minutos!
+} 
+
+// NOTE: Formato de data
+const formatDate = (time) => {
+    const arrDate = new Intl.DateTimeFormat('pt-BR', { weekday: 'long', day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit', hour12: true });
+    const [{ value: weekday },,{ value: day },,{ value: month },,{ value: year },,{ value: hour },,{ value: minute },,{ value: hour12 }] = arrDate.formatToParts(new Date(time))
+    return { weekday, day, month, year, hour, minute, hour12 }
+  }
