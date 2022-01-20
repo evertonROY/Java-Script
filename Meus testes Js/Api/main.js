@@ -1,5 +1,11 @@
-window.onload = function(){
-    fetch('https://jsonplaceholder.typicode.com/todos/1sdf')
-    .then(response => console.log(response))
-    //.then(json => console.log(json))
+window.onload = async () => {
+    const resp = await fetch('https://pokeapi.co/api/v2/')
+    const data = await resp.json()
+    console.log(data)
+
+    document.body.innerHTML = data.map((product, index) =>`
+    <div>
+    <h4>${}</h4>
+    </div>`)
 }
+
