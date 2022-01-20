@@ -9,6 +9,6 @@ function Contar() {
     do {
         res.innerHTML = `opa ${fi}`
         n++
-    }while (n < fi)
+    }while (n < fi) 
 
 }
