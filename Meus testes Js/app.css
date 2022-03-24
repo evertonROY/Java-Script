@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(to right, rgba(254, 218, 255, 0.692), rgba(201, 250, 250, 0.671));
+}
+
+h1{
+    background-color: rgba(0, 0, 0, 0.308);
+    color: white;
+    margin-bottom: 30px;
+    padding: 70px;
+    text-align: center;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.424);
+
+}
+#td{
+    background-color: white;
+    padding: 20px;
+   max-width: 700px;
+    border: solid rgba(0, 0, 0, 0.39);
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px 0px;
+    margin: auto;
+}
+
+#caixas{
+    display: flex;
+    justify-content: center;
+    margin: 80px;
+    flex-wrap: wrap;
+}
+
+.cx{
+    
+    display: inline-block;
+    background-color: rgba(85, 82, 82, 0.397);
+    min-width: 200px;
+    height: 200px;
+    margin: 50px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.671);
+    
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding:3px;
+    position: flex;
+    bottom: 0;
+}
