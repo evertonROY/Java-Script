@@ -5,7 +5,7 @@ window.onload = async () => {
 
     document.body.innerHTML = data.map((product, index) =>`
     <div>
-    <h4>${}</h4>
+    <h4>a</h4>
     </div>`)
 }
 
